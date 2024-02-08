@@ -1,6 +1,6 @@
 import 'package:calculator_app/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/widgets.dart';
+import 'package:flutter/widgets.dart';
 
 class App extends StatefulWidget {
   const App({

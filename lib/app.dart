@@ -1,3 +1,5 @@
+import 'package:calculator_app/screens/calculator_screen.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
  
 @override
@@ -6,10 +8,10 @@ import 'package:flutter/widgets.dart';
       debugShowCheckedModeBanner: false,
       title: 'Calculator App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: Scaffold(),
+      home: CalculatorScreen(),
     );
   }
 

@@ -29,7 +29,6 @@ class AppState extends State<App> {
         primarySwatch: Colors.blue,
       ),
       home: const Scaffold(),
-      
     );
   }
 }
@@ -37,7 +36,9 @@ class AppState extends State<App> {
 class App extends StatefulWidget {
   const App({
     Key? key,
-  }) : super(key: key);
+  }) : super(
+          key: key,
+        );
 
   @override
   AppState createState() => AppState();

@@ -1,22 +1,3 @@
-import 'package:flutter/material.dart'; 
-
-class CalcultorSreen extends StatefulWidget {
-  const CalcultorSreen({super.key});
-
-  @override
-  State<CalcultorSreen> createState() => _CalcultorSreenState();
-}
-
-class _CalcultorSreenState extends State<CalcultorSreen> {
-  @override
-  Widget build(BuildContext context) {
-    return const Placeholder();
-  }
-}
-
-
-
-
 // import 'package:calculator_app/screens/calculator_screen.dart';
 // import 'package:flutter/material.dart';
 

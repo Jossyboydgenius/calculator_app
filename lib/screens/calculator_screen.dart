@@ -13,7 +13,16 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     return const Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(),
+        child: Column(
+          children: [
+            Text(
+              'Calculator app test'
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 30,
+            ),)
+          ],
+        ),
       ),
     );
   }

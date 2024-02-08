@@ -1,8 +1,8 @@
 import 'package:calculator_app/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/widgets.dart';
- 
- class App extends StatefulWidget {
+
+class App extends StatefulWidget {
   const App({
     super.key,
   });
@@ -18,7 +18,7 @@ import 'package:flutter/material.dart';
 //   }
 // }
 
-@override
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
@@ -27,8 +27,7 @@ import 'package:flutter/material.dart';
         primarySwatch: Colors.blue,
         useMaterial3: true,
       ),
-      home: CalculatorScreen (),
+      home: CalculatorScreen(),
     );
   }
-
- 
+}

@@ -17,6 +17,7 @@
 //   }
 // }
 
+import 'package:calculator_app/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppState extends State<App> {
@@ -35,7 +36,7 @@ class AppState extends State<App> {
 
 class App extends StatefulWidget {
   const App({
-    Key? key,
+    Key? key, required String initialRoute, required Map<String, CalculatorScreen Function(dynamic context)> routes,
   }) : super(
           key: key,
         );

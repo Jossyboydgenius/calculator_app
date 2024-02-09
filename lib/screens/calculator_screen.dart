@@ -116,8 +116,8 @@ class CustomButton extends StatelessWidget {
           backgroundColor: Colors.orange,
           shape: const CircleBorder(),
         ),
-        child: const Text(
-          '1',
+        child: Text(
+          buttonText,
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,

@@ -95,14 +95,14 @@ class CustomButton extends StatefulWidget {
 class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
-    final Size =  MediaQuery.
+    final size = MediaQuery.of(context).size;
     return SizedBox(
-      width: 50,
+      width: size.height * 0.08,
       child: TextButton(
         onPressed: () {},
         style: TextButton.styleFrom(
           backgroundColor: Colors.orange,
-          shape: const CircleBorder(), 
+          shape: const CircleBorder(),
         ),
         child: const Text(
           '1',

@@ -60,8 +60,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 50,
               ),
             ),
-            YMargin(
-              20,
+            YMargin(20),
             ),
             Text(
               '2000',

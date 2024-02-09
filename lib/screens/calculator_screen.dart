@@ -68,7 +68,37 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 40,
               ),
             ),
-            YMargin(20),
+            const YMargin(20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                CustomButton(
+                  buttonText: 'C',
+                  buttonColor: Colors.grey,
+                  onPressed: () {},
+                  textColor: Colors.white,
+                ),
+                CustomButton(
+                  buttonText: 'del',
+                  buttonColor: Colors.grey,
+                  onPressed: () {},
+                  textColor: Colors.white,
+                ),
+                CustomButton(
+                  buttonText: '%',
+                  buttonColor: Colors.grey,
+                  onPressed: () {},
+                  textColor: Colors.white,
+                ),
+                CustomButton(
+                  buttonText: '/',
+                  buttonColor: Colors.orange,
+                  onPressed: () {},
+                  textColor: Colors.white,
+                ),
+              ],
+            ),
+             const YMargin(20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

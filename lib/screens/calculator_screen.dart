@@ -98,6 +98,7 @@ class _CustomButtonState extends State<CustomButton> {
     final size = MediaQuery.of(context).size;
     return SizedBox(
       width: size.height * 0.08,
+      height: size.height * 0.08,
       child: TextButton(
         onPressed: () {},
         style: TextButton.styleFrom(

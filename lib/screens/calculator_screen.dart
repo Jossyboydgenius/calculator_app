@@ -59,6 +59,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 50,
               ),
             ),
+            SizedBox(
+              height: 20,
+            ),
             Text(
               '2000',
               style: TextStyle(
@@ -72,25 +75,25 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 CustomButton(
                   buttonText: 'C',
                   buttonColor: Colors.grey,
-                  onPressed:() {},
+                  onPressed: () {},
                   textColor: Colors.white,
                 ),
                 CustomButton(
                   buttonText: 'del',
                   buttonColor: Colors.grey,
-                  onPressed:() {},
+                  onPressed: () {},
                   textColor: Colors.white,
                 ),
                 CustomButton(
                   buttonText: '%',
                   buttonColor: Colors.grey,
-                  onPressed:() {},
+                  onPressed: () {},
                   textColor: Colors.white,
                 ),
                 CustomButton(
                   buttonText: '/',
                   buttonColor: Colors.orange,
-                  onPressed:() {},
+                  onPressed: () {},
                   textColor: Colors.white,
                 ),
               ],

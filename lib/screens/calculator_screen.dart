@@ -50,14 +50,14 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
         child: Column(
           children: [
             Text(
-              'Calculator app test',
+              '0',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 50,
               ),
             ),
             Text(
-              'It is working perfectly',
+              '20',
               style: TextStyle(
                 color: Colors.white,
                 fontSize: 30,

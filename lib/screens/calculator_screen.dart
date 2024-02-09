@@ -38,7 +38,6 @@ class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _CalculatorScreenState createState() => _CalculatorScreenState();
 }
 

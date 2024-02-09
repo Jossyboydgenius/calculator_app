@@ -68,6 +68,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 40,
               ),
             ),
+            YMargin(20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [

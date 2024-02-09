@@ -71,3 +71,5 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     );
   }
 }
+// SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
+

@@ -48,7 +48,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
-          mainAxisAlignment: end,
+          mainAxisAlignment.end,
           children: [
             Text(
               '0',

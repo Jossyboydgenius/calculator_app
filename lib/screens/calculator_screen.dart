@@ -32,6 +32,7 @@
 // }
 // // SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
 
+import 'package:calculator_app/utils/margin/y_margin.dart';
 import 'package:flutter/material.dart';
 
 class CalculatorScreen extends StatefulWidget {
@@ -59,8 +60,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 50,
               ),
             ),
-            SizedBox(
-              height: 20,
+            YMargin(
+              20,
             ),
             Text(
               '2000',

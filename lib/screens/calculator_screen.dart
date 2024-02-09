@@ -97,7 +97,10 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {},
-      style: TextButton.styleFrom(),
+      style: TextButton.styleFrom(
+        backgroundColor: Colors.orange
+        
+      ),
       child: const Text(
         '1',
         style: TextStyle(

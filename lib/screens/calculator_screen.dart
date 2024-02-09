@@ -48,7 +48,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Column(
-          mainAxisAlignment:MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Text(
@@ -72,7 +72,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 30,
               ),
             ),
-            Row(),
+            Row(
+              children: [CustomButton()],
+            ),
           ],
         ),
       ),
@@ -95,13 +97,13 @@ class _CustomButtonState extends State<CustomButton> {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: () {},
-      child:  Text(
-              '300',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-              ),
-            ),,
+      child: Text(
+        '1',
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: 30,
+        ),
+      ),
     );
   }
 }

@@ -47,8 +47,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     return const Scaffold(
       backgroundColor: Colors.black,
       body: 
-      SafeArea(
-        child: Column(
+      // SafeArea( 
+        // child: 
+        Column(
           children: [
             Text(
               'Calculator app test',

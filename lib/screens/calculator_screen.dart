@@ -95,17 +95,20 @@ class CustomButton extends StatefulWidget {
 class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
-    return TextButton(
-      onPressed: () {},
-      style: TextButton.styleFrom(
-        backgroundColor: Colors.orange,
-        shape: const CircleBorder(), 
-      ),
-      child: const Text(
-        '1',
-        style: TextStyle(
-          color: Colors.white,
-          fontSize: 30,
+    return SizedBox(
+      width: 500,
+      child: TextButton(
+        onPressed: () {},
+        style: TextButton.styleFrom(
+          backgroundColor: Colors.orange,
+          shape: const CircleBorder(), 
+        ),
+        child: const Text(
+          '1',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 30,
+          ),
         ),
       ),
     );

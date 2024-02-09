@@ -53,7 +53,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               'Calculator app test',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: 50,
               ),
             ),
             Text(

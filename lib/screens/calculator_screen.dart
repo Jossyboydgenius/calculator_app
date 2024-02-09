@@ -88,6 +88,10 @@ class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
   });
+  final String buttonText;
+  final Color buttonColor;
+  final Color textColor;
+  final VoidCallback onPressed;
 
   @override
   Widget build(BuildContext context) {

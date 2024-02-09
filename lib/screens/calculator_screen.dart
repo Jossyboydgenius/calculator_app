@@ -70,7 +70,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               children: [
                 CustomButton(
                   buttonText: 'C',
-                  buttonColor: Colors.white12,
+                  buttonColor: Colors.grey,
                   onPressed:() {},
                   textColor: Colors.white,
                 ),

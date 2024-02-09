@@ -95,7 +95,7 @@ class CustomButton extends StatefulWidget {
 class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
-    final Size =  mediaQu 
+    final Size =  MediaQuery.
     return SizedBox(
       width: 50,
       child: TextButton(

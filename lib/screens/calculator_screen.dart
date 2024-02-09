@@ -53,7 +53,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Text(
+            const Text(
               '0',
               style: TextStyle(
                 color: Colors.white,

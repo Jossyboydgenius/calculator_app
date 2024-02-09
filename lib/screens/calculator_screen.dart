@@ -46,7 +46,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   Widget build(BuildContext context) {
     return const Scaffold(
       backgroundColor: Colors.black,
-      body: SafeArea(
+      body: 
+      SafeArea(
         child: Column(
           children: [
             Text(

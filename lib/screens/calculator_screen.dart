@@ -67,6 +67,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               ),
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 CustomButton(
                   buttonText: 'C',

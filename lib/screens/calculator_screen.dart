@@ -87,6 +87,10 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 class CustomButton extends StatelessWidget {
   const CustomButton({
     super.key,
+    required this.buttonText,
+    required this.buttonColor,
+    required this.textColor,
+    required this.onPressed,
   });
   final String buttonText;
   final Color buttonColor;

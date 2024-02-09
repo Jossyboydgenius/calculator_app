@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class XMargin extends StatelessWidget {
-  const XMargin({super.key});
+  const XMargin(
+    this.value, {
+    super.key,
+  });
   final double value;
 
   @override

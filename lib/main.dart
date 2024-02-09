@@ -16,7 +16,9 @@ void main() {
     const App(
       initialRoute: '/',
       routes: {
-        '/': (context) => const CalculatorScreen(),
+        '/': (context) {
+          return const CalculatorScreen();
+        },
       },
     ),
   );

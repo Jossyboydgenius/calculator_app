@@ -72,6 +72,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                 fontSize: 30,
               ),
             ),
+            Row(),
           ],
         ),
       ),

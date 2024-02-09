@@ -6,6 +6,7 @@
 //     const App(),
 //   );
 // }
+
 import 'package:calculator_app/screens/calculator_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:calculator_app/app.dart';
@@ -15,8 +16,9 @@ void main() {
     const App(
       initialRoute: '/',
       routes: {
-        '/': (context) => CalculatorScreen(),
+        '/': (context) => const CalculatorScreen(),
       },
     ),
   );
 }
+

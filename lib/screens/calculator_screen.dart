@@ -83,16 +83,10 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 }
 
 // SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
-class CustomButton extends StatefulWidget {
-  const CustomButton({
-    super.key,
-  });
 
-  @override
-  State<CustomButton> createState() => _CustomButtonState();
-}
+class CustomButton extends StatelessWidget {
+  const CustomButton({super.key});
 
-class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -114,5 +108,20 @@ class _CustomButtonState extends State<CustomButton> {
         ),
       ),
     );
+  }
+}
+class CustomButton extends StatefulWidget {
+  const CustomButton({
+    super.key,
+  });
+
+  @override
+  State<CustomButton> createState() => _CustomButtonState();
+}
+
+class _CustomButtonState extends State<CustomButton> {
+  @override
+  Widget build(BuildContext context) {
+    
   }
 }

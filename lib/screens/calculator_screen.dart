@@ -60,7 +60,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               '20',
               style: TextStyle(
                 color: Colors.white,
-                fontSize: 30,
+                fontSize: 40,
               ),
             ),
             Text(

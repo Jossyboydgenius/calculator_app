@@ -74,12 +74,15 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             ),
             Row(
               children: [
-                CustomButton(
-                  buttonText: 'C',
-                  buttonColor: Colors.white12,
-                  onPressed:() {},
-                  textColor: Colors.white,
-                ),
+                void emptyFunction() {}
+
+CustomButton(
+  buttonText: 'C',
+  buttonColor: Colors.white12,
+  onPressed: emptyFunction,
+  textColor: Colors.white,
+),
+
               ],
             ),
           ],

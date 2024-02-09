@@ -85,7 +85,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
 // SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
 
 class CustomButton extends StatelessWidget {
-  const CustomButton({super.key});
+  const CustomButton({
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

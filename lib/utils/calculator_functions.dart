@@ -12,17 +12,19 @@ class CalculatorFunctions {
     } else if (buttonText == '⌫') {
       expression = expression.substring(0, expression.length - 1);
     } else if (buttonText == '=') {
-      try{
+      try {
         Parser parser = Parser();
         Expression exp = parser.parse(expression);
         ContextModel context = ContextModel();
-        final evaluatedExpression = exp.evaluate(
-        EvaluationType.REAL, 
-        context,
-        );
+        final evaluatedExpression = exp
+            .evaluate(
+              EvaluationType.REAL,
+              context,
+            )
+            .toString();
         result = evaluatedExpression;
         expression = evaluatedExpression;
-      } catch(e) {
+      } catch (e) {
         result = 'Error $e';
       }
     } else {

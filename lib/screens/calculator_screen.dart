@@ -124,7 +124,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonColor: Colors.white12,
                     onPressed: () {
                       setState(() {
-                      calculatorFunctions.performButtonAction('7');
+                      calculatorFunctions.performButtonAction('8');
                       });
                       },
                     textColor: Colors.white,

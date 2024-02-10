@@ -28,15 +28,15 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               Text(
                 calculatorFunctions.expression,
-                style: const TextStyle(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 50,
                 ),
               ),
-              const YMargin(20),
+              YMargin(20),
               Text(
                 calculatorFunctions.result,
-                style: const TextStyle(
+                style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,
                 ),

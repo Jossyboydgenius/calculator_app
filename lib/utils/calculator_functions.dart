@@ -9,8 +9,11 @@ class CalculatorFunctions {
     if (buttonText == 'C') {
       expression = '';
       result = '';
-    } else if (buttonText == '⌫'){
-      
+    } else if (buttonText == '⌫') {
+      expression = expression.substring(0, expression.length - 1);
+    } else if (buttonText == '=') {
+    } else {
+      expression += buttonText;
     }
   }
 

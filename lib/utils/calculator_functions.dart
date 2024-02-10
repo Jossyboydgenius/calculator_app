@@ -23,7 +23,7 @@ class CalculatorFunctions {
         result = evaluatedExpression;
         expression = evaluatedExpression;
       } catch(e) (
-        result = 'Error &e';
+        result = 'Error $e';
       )
     } else {
       expression += buttonText;

@@ -16,9 +16,11 @@ class CalculatorFunctions {
         Parser parser = Parser();
         Expression exp = parser.parse(expression);
         ContextModel context = ContextModel();
-        final evaluatedExpression = exp.evaluate
-        (EvaluationType.REAL, 
-        context,);
+        final evaluatedExpression = exp.evaluate(
+        EvaluationType.REAL, 
+        context,
+        );
+        expression = evaluatedExpression;
       } catch(e)(
         result = 'Error &e';
       )

@@ -206,7 +206,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonColor: Colors.orange,
                     onPressed: () {
                       setState(() {
-                      calculatorFunctions.performButtonAction('8');
+                      calculatorFunctions.performButtonAction('−');
                       });
                       },
                     textColor: Colors.white,

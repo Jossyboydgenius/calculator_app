@@ -24,8 +24,7 @@ class CalculatorFunctions {
               EvaluationType.REAL,
               context,
             )
-            .toString();
-        result = evaluatedExpression;
+        result = '${isInterger(evaluatedExpression)}';
         expression = evaluatedExpression;
       } catch (e) {
         result = 'Error $e';

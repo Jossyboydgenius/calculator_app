@@ -50,176 +50,179 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.end,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            const Text(
-              '0',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 50,
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            children: [
+              const Text(
+                '0',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 50,
+                ),
               ),
-            ),
-            YMargin(20),
-            Text(
-              '2000',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 40,
+              YMargin(20),
+              Text(
+                '2000',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 40,
+                ),
               ),
-            ),
-            const YMargin(20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomButton(
-                  buttonText: 'C',
-                  buttonColor: Colors.grey,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: 'del',
-                  buttonColor: Colors.grey,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '%',
-                  buttonColor: Colors.grey,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '÷',
-                  buttonColor: Colors.orange,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
-             const YMargin(20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomButton(
-                  buttonText: '7',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '8',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '9',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: 'x',
-                  buttonColor: Colors.orange,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
-             const YMargin(20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomButton(
-                  buttonText: '4',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '5',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '6',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '−',
-                  buttonColor: Colors.orange,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
-             const YMargin(20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomButton(
-                  buttonText: '1',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '2',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '3',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '+',
-                  buttonColor: Colors.orange,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
-            const YMargin(20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                CustomButton(
-                  buttonText: '0',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '.',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '00',
-                  buttonColor: Colors.white12,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-                CustomButton(
-                  buttonText: '=',
-                  buttonColor: Colors.orange,
-                  onPressed: () {},
-                  textColor: Colors.white,
-                ),
-              ],
-            ),
-          ],
+              const YMargin(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomButton(
+                    buttonText: 'C',
+                    buttonColor: Colors.grey,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: 'del',
+                    buttonColor: Colors.grey,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '%',
+                    buttonColor: Colors.grey,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '÷',
+                    buttonColor: Colors.orange,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+               const YMargin(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomButton(
+                    buttonText: '7',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '8',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '9',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: 'x',
+                    buttonColor: Colors.orange,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+               const YMargin(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomButton(
+                    buttonText: '4',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '5',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '6',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '−',
+                    buttonColor: Colors.orange,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+               const YMargin(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomButton(
+                    buttonText: '1',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '2',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '3',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '+',
+                    buttonColor: Colors.orange,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+              const YMargin(20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  CustomButton(
+                    buttonText: '0',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '.',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '00',
+                    buttonColor: Colors.white12,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                  CustomButton(
+                    buttonText: '=',
+                    buttonColor: Colors.orange,
+                    onPressed: () {},
+                    textColor: Colors.white,
+                  ),
+                ],
+              ),
+            ],
+          ),
         ),
       ),
     );

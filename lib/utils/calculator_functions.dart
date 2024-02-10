@@ -6,8 +6,11 @@ class CalculatorFunctions {
   String result = '';
   // Creating a function that helps in handling whatever button is clicked and also evaluate the expression
   void performButtonAction(String buttonText) {
-    if (buttonText == 'C'){
-      e
+    if (buttonText == 'C') {
+      expression = '';
+      result = '';
+    } else if (buttonText == '⌫'){
+      
     }
   }
 

@@ -20,6 +20,7 @@ class CalculatorFunctions {
         EvaluationType.REAL, 
         context,
         );
+        result = evaluatedExpression;
         expression = evaluatedExpression;
       } catch(e)(
         result = 'Error &e';

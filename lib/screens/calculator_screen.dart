@@ -32,6 +32,7 @@
 // }
 // // SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
 
+import 'package:calculator_app/utils/calculator_functions.dart';
 import 'package:calculator_app/utils/margin/y_margin.dart';
 import 'package:flutter/material.dart';
 import '../Widgets/custom_button.dart';
@@ -45,6 +46,7 @@ class CalculatorScreen extends StatefulWidget {
 }
 
 class _CalculatorScreenState extends State<CalculatorScreen> {
+  final CalculatorFunctions calculatorFunctions = CalculatorFunctions();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

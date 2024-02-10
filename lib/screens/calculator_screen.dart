@@ -188,7 +188,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     buttonText: '−',
                     buttonColor: Colors.orange,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                      calculatorFunctions.performButtonAction('8');
+                      });
+                      },
                     textColor: Colors.white,
                   ),
                 ],
@@ -200,13 +204,21 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     buttonText: '1',
                     buttonColor: Colors.white12,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                      calculatorFunctions.performButtonAction('1');
+                      });
+                      },
                     textColor: Colors.white,
                   ),
                   CustomButton(
                     buttonText: '2',
                     buttonColor: Colors.white12,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                      calculatorFunctions.performButtonAction('2');
+                      });
+                      },
                     textColor: Colors.white,
                   ),
                   CustomButton(

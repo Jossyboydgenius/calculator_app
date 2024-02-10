@@ -60,8 +60,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              const Text(
-                '0',
+               Text(
+                calculatorFunctions.expression,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 50,
@@ -69,7 +69,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               ),
               YMargin(20),
               Text(
-                '2000',
+                calculatorFunctions.result,
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 40,

@@ -1,3 +1,5 @@
+import 'package:math_expressions/math_expressions.dart';
+
 class CalculatorFunctions {
   // Defining the expression and the result variable
   String expression = '';
@@ -11,8 +13,10 @@ class CalculatorFunctions {
       expression = expression.substring(0, expression.length - 1);
     } else if (buttonText == '=') {
       try{
-        
-      }
+        Parser parser = |
+      } catch(e)(
+        result = 'Error &e';
+      )
     } else {
       expression += buttonText;
     }

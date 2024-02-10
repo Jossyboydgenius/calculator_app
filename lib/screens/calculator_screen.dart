@@ -35,7 +35,7 @@
 import 'package:calculator_app/utils/calculator_functions.dart';
 import 'package:calculator_app/utils/margin/y_margin.dart';
 import 'package:flutter/material.dart';
-import '../Widgets/custom_button.dart';
+import '../widgets/custom_button.dart';
 
 class CalculatorScreen extends StatefulWidget {
   const CalculatorScreen({Key? key}) : super(key: key);
@@ -114,7 +114,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                     buttonColor: Colors.orange,
                     onPressed: () {
                       setState(() {
-                      calculatorFunctions.performButtonAction('÷');
+                      calculatorFunctions.performButtonAction('/');
                       });
                       },
                     textColor: Colors.white,

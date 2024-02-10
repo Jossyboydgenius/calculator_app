@@ -13,7 +13,12 @@ class CalculatorFunctions {
       expression = expression.substring(0, expression.length - 1);
     } else if (buttonText == '=') {
       try{
-        Parser parser = |
+        Parser parser = Parser();
+        Expression exp = parser.parse(expression);
+        ContextModel context = ContextModel();
+        final evaluatedExpression = exp.evaluate
+        (EvaluationType.REAL, 
+        context,);
       } catch(e)(
         result = 'Error &e';
       )

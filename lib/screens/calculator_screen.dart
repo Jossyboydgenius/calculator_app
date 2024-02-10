@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../widgets/custom_button.dart';
 
 class CalculatorScreen extends StatefulWidget {
-  const CalculatorScreen({Key? key}) : super(key: key);
+  const CalculatorScreen({super.key});
 
   @override
   // State<CalculatorScreenState> createState() => _CalculatorScreenState();
@@ -28,15 +28,15 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               Text(
                 calculatorFunctions.expression,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 50,
                 ),
               ),
-              YMargin(20),
+              const YMargin(20),
               Text(
                 calculatorFunctions.result,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 40,
                 ),

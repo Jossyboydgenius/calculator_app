@@ -142,7 +142,11 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     buttonText: 'x',
                     buttonColor: Colors.orange,
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                      calculatorFunctions.performButtonAction('x');
+                      });
+                      },
                     textColor: Colors.white,
                   ),
                 ],

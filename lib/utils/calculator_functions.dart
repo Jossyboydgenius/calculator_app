@@ -24,7 +24,7 @@ class CalculatorFunctions {
               EvaluationType.REAL,
               context,
             )
-        result = '${isInterger(evaluatedExpression)}';
+        result = '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
         expression = evaluatedExpression;
       } catch (e) {
         result = 'Error $e';

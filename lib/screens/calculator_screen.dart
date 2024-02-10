@@ -51,7 +51,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
       backgroundColor: Colors.black,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 20.0,
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
@@ -101,7 +103,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   ),
                 ],
               ),
-               const YMargin(20),
+              const YMargin(20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -131,7 +133,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   ),
                 ],
               ),
-               const YMargin(20),
+              const YMargin(20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -161,7 +163,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   ),
                 ],
               ),
-               const YMargin(20),
+              const YMargin(20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [

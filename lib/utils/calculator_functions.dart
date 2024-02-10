@@ -19,12 +19,12 @@ class CalculatorFunctions {
         Parser parser = Parser();
         Expression exp = parser.parse(expression);
         ContextModel context = ContextModel();
-        final evaluatedExpression = exp
-            .evaluate(
-              EvaluationType.REAL,
-              context,
-            )
-        result = '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
+        final evaluatedExpression = exp.evaluate(
+          EvaluationType.REAL,
+          context,
+        );
+        result =
+            '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
         expression = evaluatedExpression;
       } catch (e) {
         result = 'Error $e';

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 class CalculatorFunctions {
   // Defining the expression and the result variable
   String expression = '';

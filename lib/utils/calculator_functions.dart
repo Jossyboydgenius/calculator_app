@@ -38,33 +38,33 @@ class CalculatorFunctions {
   bool isInterger(num value) => value is int || value == value.roundToDouble();
 }
  // Modified method to handle the new '%' button
-  void performButtonAction(String buttonText) {
-    if (buttonText == 'C') {
-      expression = '';
-      result = '';
-    } else if (buttonText == '⌫') {
-      if (expression.isEmpty) {
-        return;
-      }
-      expression = expression.substring(0, expression.length - 1);
-    } else if (buttonText == '%') {
-      handlePercentage();
-    } else if (buttonText == '=') {
-      try {
-        Parser parser = Parser();
-        Expression exp = parser.parse(expression);
-        ContextModel context = ContextModel();
-        final evaluatedExpression = exp.evaluate(
-          EvaluationType.REAL,
-          context,
-        );
-        result =
-            '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
-        expression = result;
-      } catch (e) {
-        result = 'Error $e';
-      }
-    } else {
-      expression += buttonText;
-    }
-  }
+  // void performButtonAction(String buttonText) {
+  //   if (buttonText == 'C') {
+  //     expression = '';
+  //     result = '';
+  //   } else if (buttonText == '⌫') {
+  //     if (expression.isEmpty) {
+  //       return;
+  //     }
+  //     expression = expression.substring(0, expression.length - 1);
+  //   } else if (buttonText == '%') {
+  //     handlePercentage();
+  //   } else if (buttonText == '=') {
+  //     try {
+  //       Parser parser = Parser();
+  //       Expression exp = parser.parse(expression);
+  //       ContextModel context = ContextModel();
+  //       final evaluatedExpression = exp.evaluate(
+  //         EvaluationType.REAL,
+  //         context,
+  //       );
+  //       result =
+  //           '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
+  //       expression = result;
+  //     } catch (e) {
+  //       result = 'Error $e';
+  //     }
+  //   } else {
+  //     expression += buttonText;
+  //   }
+  // }

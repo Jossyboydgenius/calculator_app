@@ -37,6 +37,7 @@
 //   // Creating a function that determines if a number is a interget or not
 //   bool isInterger(num value) => value is int || value == value.roundToDouble();
 // }
+// This does not handle the % function
 
 import 'package:math_expressions/math_expressions.dart';
 

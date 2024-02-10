@@ -163,7 +163,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 CustomButton(
-                  buttonText: '4',
+                  buttonText: '1',
                   buttonColor: Colors.white12,
                   onPressed: () {},
                   textColor: Colors.white,

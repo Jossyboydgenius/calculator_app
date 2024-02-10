@@ -60,7 +60,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-               Text(
+              Text(
                 calculatorFunctions.expression,
                 style: TextStyle(
                   color: Colors.white,
@@ -112,7 +112,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   CustomButton(
                     buttonText: '7',
                     buttonColor: Colors.white12,
-                    onPressed: () {},
+                    onPressed: () {
+                      calculatorFunctions.performButtonAction('7');
+                    },
                     textColor: Colors.white,
                   ),
                   CustomButton(

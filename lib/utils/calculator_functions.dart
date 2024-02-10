@@ -1,10 +1,67 @@
-import 'package:math_expressions/math_expressions.dart';
+// import 'package:math_expressions/math_expressions.dart';
 
-class CalculatorFunctions {
-  // Defining the expression and the result variable
-  String expression = '';
-  String result = '';
-  // Creating a function that helps in handling whatever button is clicked and also evaluate the expression
+// class CalculatorFunctions {
+//   // Defining the expression and the result variable
+//   String expression = '';
+//   String result = '';
+//   // Creating a function that helps in handling whatever button is clicked and also evaluate the expression
+//   void performButtonAction(String buttonText) {
+//     if (buttonText == 'C') {
+//       expression = '';
+//       result = '';
+//     } else if (buttonText == '⌫') {
+//       if (expression.isEmpty) {
+//         return;
+//       }
+//       expression = expression.substring(0, expression.length - 1);
+//     } else if (buttonText == '=') {
+//       try {
+//         Parser parser = Parser();
+//         Expression exp = parser.parse(expression);
+//         ContextModel context = ContextModel();
+//         final evaluatedExpression = exp.evaluate(
+//           EvaluationType.REAL,
+//           context,
+//         );
+//         result =
+//             '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
+//         expression = result;
+//       } catch (e) {
+//         result = 'Error $e';
+//       }
+//     } else {
+//       expression += buttonText;
+//     }
+//   }
+
+//   // Creating a function that determines if a number is a interget or not
+//   bool isInterger(num value) => value is int || value == value.roundToDouble();
+// }
+
+// ... Existing code ...
+
+  // New method for handling percentage
+  void handlePercentage() {
+    if (expression.isEmpty) {
+      return;
+    }
+    try {
+      Parser parser = Parser();
+      Expression exp = parser.parse(expression);
+      ContextModel context = ContextModel();
+      final evaluatedExpression = exp.evaluate(
+        EvaluationType.REAL,
+        context,
+      );
+      final percentageResult = evaluatedExpression / 100;
+      result = '$percentageResult';
+      expression = result;
+    } catch (e) {
+      result = 'Error $e';
+    }
+  }
+
+  // Modified method to handle the new '%' button
   void performButtonAction(String buttonText) {
     if (buttonText == 'C') {
       expression = '';
@@ -14,6 +71,8 @@ class CalculatorFunctions {
         return;
       }
       expression = expression.substring(0, expression.length - 1);
+    } else if (buttonText == '%') {
+      handlePercentage();
     } else if (buttonText == '=') {
       try {
         Parser parser = Parser();
@@ -34,37 +93,4 @@ class CalculatorFunctions {
     }
   }
 
-  // Creating a function that determines if a number is a interget or not
-  bool isInterger(num value) => value is int || value == value.roundToDouble();
-}
- // Modified method to handle the new '%' button
-  // void performButtonAction(String buttonText) {
-  //   if (buttonText == 'C') {
-  //     expression = '';
-  //     result = '';
-  //   } else if (buttonText == '⌫') {
-  //     if (expression.isEmpty) {
-  //       return;
-  //     }
-  //     expression = expression.substring(0, expression.length - 1);
-  //   } else if (buttonText == '%') {
-  //     handlePercentage();
-  //   } else if (buttonText == '=') {
-  //     try {
-  //       Parser parser = Parser();
-  //       Expression exp = parser.parse(expression);
-  //       ContextModel context = ContextModel();
-  //       final evaluatedExpression = exp.evaluate(
-  //         EvaluationType.REAL,
-  //         context,
-  //       );
-  //       result =
-  //           '${isInterger(evaluatedExpression) ? (evaluatedExpression as num).ceil() : '$evaluatedExpression'}';
-  //       expression = result;
-  //     } catch (e) {
-  //       result = 'Error $e';
-  //     }
-  //   } else {
-  //     expression += buttonText;
-  //   }
-  // }
+// ... Existing code ...

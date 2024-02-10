@@ -1,37 +1,3 @@
-// import 'package:flutter/material.dart';
-
-// class CalculatorScreen extends StatefulWidget {
-//   const CalculatorScreen({
-//     super.key,
-//   });
-
-//   @override
-//   State<CalculatorScreen> createState() => _CalculatorScreenState();
-// }
-
-// class _CalculatorScreenState extends State<CalculatorScreen> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return const Scaffold(
-//       backgroundColor: Colors.black,
-//       body: SafeArea(
-//         child: Column(
-//           children: [
-//             Text(
-//               'Calculator app test',
-//               style: TextStyle(
-//                 color: Colors.white,
-//                 fontSize: 30,
-//               ),
-//             )
-//           ],
-//         ),
-//       ),
-//     );
-//   }
-// }
-// // SafeArea -> Column -> [Text, Text, [Row -> [CustomButton]]]
-
 import 'package:calculator_app/utils/calculator_functions.dart';
 import 'package:calculator_app/utils/margin/y_margin.dart';
 import 'package:flutter/material.dart';
@@ -62,15 +28,15 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
             children: [
               Text(
                 calculatorFunctions.expression,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 50,
                 ),
               ),
-              YMargin(20),
+              const YMargin(20),
               Text(
                 calculatorFunctions.result,
-                style: TextStyle(
+                style: const TextStyle(
                   color: Colors.white,
                   fontSize: 40,
                 ),

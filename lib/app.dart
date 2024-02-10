@@ -32,6 +32,7 @@ class App extends StatelessWidget {
       title: 'Calculator App',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        fontFamily: 'Noto'
       ),
       home: const CalculatorScreen(),
     );

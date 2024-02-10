@@ -104,19 +104,19 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
               children: [
                 CustomButton(
                   buttonText: '7',
-                  buttonColor: Colors.grey,
+                  buttonColor: Colors.white12,
                   onPressed: () {},
                   textColor: Colors.white,
                 ),
                 CustomButton(
                   buttonText: '8',
-                  buttonColor: Colors.grey,
+                  buttonColor: Colors.white12,
                   onPressed: () {},
                   textColor: Colors.white,
                 ),
                 CustomButton(
                   buttonText: '9',
-                  buttonColor: Colors.grey,
+                  buttonColor: Colors.white12,
                   onPressed: () {},
                   textColor: Colors.white,
                 ),
@@ -151,8 +151,8 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   textColor: Colors.white,
                 ),
                 CustomButton(
-                  buttonText: '--',
-                  buttonColor: Colors.white12,
+                  buttonText: '-',
+                  buttonColor: Colors.orange,
                   onPressed: () {},
                   textColor: Colors.white,
                 ),

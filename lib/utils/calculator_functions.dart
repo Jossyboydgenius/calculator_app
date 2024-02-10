@@ -10,6 +10,9 @@ class CalculatorFunctions {
     } else if (buttonText == '⌫') {
       expression = expression.substring(0, expression.length - 1);
     } else if (buttonText == '=') {
+      try{
+        
+      }
     } else {
       expression += buttonText;
     }

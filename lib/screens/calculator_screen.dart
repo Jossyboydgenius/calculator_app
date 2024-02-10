@@ -169,7 +169,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   textColor: Colors.white,
                 ),
                 CustomButton(
-                  buttonText: '5',
+                  buttonText: '52',
                   buttonColor: Colors.white12,
                   onPressed: () {},
                   textColor: Colors.white,
